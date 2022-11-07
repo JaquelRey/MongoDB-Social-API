@@ -1,11 +1,11 @@
-const usernames = [
-  "Dog",
-  "Cat",
-  "Duck",
-  "Goose",
-  "Fish",
-  "Turtle",
-];
+// const usernames = [
+//   "Dog",
+//   "Cat",
+//   "Duck",
+//   "Goose",
+//   "Fish",
+//   "Turtle",
+// ];
 
 // const reactions = [
 //   "needfood",
@@ -23,9 +23,9 @@ const usernames = [
 // // Get a random item 
 // const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-// Gets a random username
-const randomUser = usernames.map(user => user)
+// // Gets a random username
+// const randomUser = usernames.map(user => user)
 
 //need to add functions and data to create thoughts with reactions
 
-module.exports = { randomUser};
+// module.exports = { randomUser};
