@@ -20,11 +20,11 @@ const usernames = [
 // const thoughts = [{}];
 
 
-// Get a random item 
-const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
+// // Get a random item 
+// const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 // Gets a random username
-const randomUser = () => `${getRandom(usernames)}`;
+const randomUser = usernames.map(user => user)
 
 //need to add functions and data to create thoughts with reactions
 

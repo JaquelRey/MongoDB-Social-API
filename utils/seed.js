@@ -1,6 +1,8 @@
 const connection = require("../config/connection");
 const { User, Thought } = require("../models");
-const { randomUser } = require("./data");
+// const { randomUser } = require("./data"); didnt work for now
+
+const names = ["Dog", "Cat", "Duck", "Goose", "Fish", "Turtle"];
 
 connection.on("error", (err) => err);
 // seeding users
@@ -12,8 +14,8 @@ connection.once("open", async () => {
 
   const users = [];
 
-  for (let i = 0; i < 7; i++) {
-    const username = randomUser();
+  for (let i = 0; i < names.length; i++) {
+    const username = names[i]
     const email = username + "@gmail.com";
     users.push({
       username,
